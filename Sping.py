@@ -1,7 +1,7 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# A VERY basic python script to rapidly ping hosts on the network using multithreading.
+# A basic python script to rapidly ping hosts on the network using multithreading.
 #     Copyright (C) 2015  babaklava
 #
 #     This program is free software: you can redistribute it and/or modify
@@ -11,14 +11,14 @@
 #
 #     This program is distributed in the hope that it will be useful,
 #     but WITHOUT ANY WARRANTY; without even the implied warranty of
-#     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 #     GNU General Public License for more details.
 #
 #     You should have received a copy of the GNU General Public License
 #     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 # --------------------------------------------------------------------------------
 # Sping was written for education purposes only
-# Its developer/s decline all responsibility:
+# It's developer/s decline all responsibility:
 #	– in case the tool is used for malicious purposes or in any illegal context;
 #	– in case the tool crashes your system or other systems.
 #
@@ -30,8 +30,10 @@ import subprocess
 import ipaddress
 import time
 
+# Set a print lock
 print_lock = threading.Lock()
 
+# create a list that holds all IPs to be pinged
 network = []
 
 # get input from user
