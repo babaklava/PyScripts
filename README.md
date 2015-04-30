@@ -1,2 +1,2 @@
-# PyScripts
-Python Scripts
+# SPYA
+SPYA is a working progress 
