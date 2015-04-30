@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# A basic python script to rapidly ping hosts on the network using multithreading.
+# SPYA is a collection of several useful python scripts.
 #     Copyright (C) 2015  babaklava
 #
 #     This program is free software: you can redistribute it and/or modify
@@ -19,15 +19,14 @@
 # --------------------------------------------------------------------------------
 # Sping was written for education purposes only
 # It's developer/s decline all responsibility:
-#	– in case the tool is used for malicious purposes or in any illegal context;
-#	– in case the tool crashes your system or other systems.
+#   – in case the tool is used for malicious purposes or in any illegal context;
+#   – in case the tool crashes your system or other systems.
 #
 #
-print ("          ____  ____ __  ___      ")
-print ("         / ___||    \\\ \/ / \     ")
-print ("         \___ \|  __/ \  / _ \    ")
-print ("          ___) | |    / / ___ \   ")
-print ("         |____/|_|   /_/_/   \_\  ")
-print ("                                  ")                   
-print ("        SIMPLE PYTHON APPLICATION ")               
-                   
+print("          ____  ____ __  ___      ")
+print("         / ___||    \\\ \/ / \     ")
+print("         \___ \|  __/ \  / _ \    ")
+print("          ___) | |    / / ___ \   ")
+print("         |____/|_|   /_/_/   \_\  ")
+print("                                  ")
+print("       SIMPLE PYTHON APPLICATIONS ")
