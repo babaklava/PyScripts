@@ -17,7 +17,7 @@
 #     You should have received a copy of the GNU General Public License
 #     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 # -------------------------------------------------------------------------------------
-# Random Password Generator was written for education purposes only
+# RanPassGen.py was written for education purposes only
 # It's developer/s decline all responsibility:
 #   – in case the tool is used for malicious purposes or in any illegal context;
 #   – in case the tool crashes your system or other systems;
