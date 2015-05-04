@@ -24,23 +24,32 @@
 #
 #
 import re
+import sys
 import urllib.request
 import urllib.error
 
 
 def urlfinder():
     try:
-        usrinput = input("Enter URL to start scraping >> ")
-        print("Looking for URLs in", usrinput)
-        website = urllib.request.urlopen(usrinput).read()
+        print("Trying:", url)
+        website = urllib.request.urlopen(url).read()
+    except urllib.error.URLError as e:
+            if hasattr(e, "reason"):
+                print("ERROR!", e.reason)
+            elif hasattr(e, "code"):
+                print("ERROR!", e.code)
+    except ConnectionResetError:
+            print("ERROR! Connection was reset, please try again.")
+    except ValueError:
+            print("ERROR! Malformed URL, please try again.")
+    except KeyboardInterrupt:
+            print("\nExiting...")
+            sys.exit(0)
+    else:
         links = re.findall(r'(?:(?:https?|ftp|file):\/\/|www\.|ftp\.)[\'"]?(?:[^\'" >]+)', str(website))
         for link in links:
             print(link)
-    except ValueError:
-        print("*** Looks like a typo, please try again. ***\n")
-        return urlfinder()
-    except urllib.error.URLError:
-        print("*** Looks like a typo, please try again. ***\n")
-        return urlfinder()
+
+url = input("Enter URL to start scraping >> ")
 
 urlfinder()
