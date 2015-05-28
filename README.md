@@ -1,2 +1,5 @@
 # SPYA
-SPYA is a working progress 
+Simple Python Applications
+
+SuperPing.Py - Performs super quick ping using multithreading 
+rpg.py - Random Password Generator
